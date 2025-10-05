@@ -1,0 +1,3 @@
+rmdir: falha ao remover '/s': Ficheiro ou pasta inexistente
+rmdir: falha ao remover '/q': Ficheiro ou pasta inexistente
+rmdir: falha ao remover '.next': A pasta não está vazia
