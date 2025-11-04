@@ -53,219 +53,228 @@ interface VisitedRoom {
 const SALAS_DATA: Sala[] = [
   {
     id: 1,
-    nome: 'Robótica Avançada',
-    categoria: 'Tecnologia',
+    nome: '1º A - Africanidades e Oficina de Argila',
+    categoria: 'Africanidades',
     descricao:
-      'Explore o mundo da robótica com demonstrações de robôs autônomos, braços mecânicos e inteligência artificial aplicada. Veja como a tecnologia está revolucionando a indústria e o dia a dia.',
-    professor: 'Prof. Carlos Silva',
-    nivel: 'Intermediário'
+      'Africanidades e Oficina de Argila celebra a cultura e herança africana por meio de produções artísticas feitas pelas crianças, valorizando a identidade, a ancestralidade e a expressão criativa.',
+    professor: 'Profa. Vera',
+    nivel: ''
   },
   {
     id: 2,
-    nome: 'Química Experimental',
-    categoria: 'Ciências',
+    nome: '1º B - Brinquedos Antigos e Brinquedos Tecnológicos',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Experimentos fascinantes com reações químicas coloridas, cristalização e análise de substâncias. Descubra os segredos da química através de demonstrações práticas e seguras.',
-    professor: 'Profa. Ana Santos',
-    nivel: 'Básico'
+      'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
+    professor: 'Profa. Shirley',
+    nivel: ''
   },
   {
     id: 3,
-    nome: 'Astronomia e Cosmos',
-    categoria: 'Ciências',
+    nome: '1º C - Brinquedos e Jogos Recicláveis',
+    categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Uma jornada pelo universo com telescópios, planetário portátil e modelos do sistema solar. Explore galáxias distantes e aprenda sobre a origem do universo.',
-    professor: 'Prof. João Oliveira',
-    nivel: 'Intermediário'
+      'Brinquedos e Jogos Recicláveis estimula a criatividade e a consciência ambiental das crianças, mostrando como materiais reaproveitados podem se transformar em divertidas formas de brincar e aprender.',
+    professor: 'Profa. Luciana',
+    nivel: ''
   },
   {
     id: 4,
-    nome: 'Biotecnologia Moderna',
-    categoria: 'Ciências',
+    nome: '1º D - As Contribuições Africanas para Nossa Cultura',
+    categoria: 'Africanidades',
     descricao:
-      'Descubra como a biotecnologia está transformando a medicina, agricultura e meio ambiente. Veja culturas de células, DNA e técnicas de engenharia genética.',
-    professor: 'Profa. Maria Costa',
-    nivel: 'Avançado'
+      'As Contribuições Africanas para Nossa Cultura reconhece e valoriza a influência africana na formação da identidade brasileira, presente na música, na culinária, na linguagem e em diversas expressões culturais.',
+    professor: 'Profa. Sheila',
+    nivel: ''
   },
   {
     id: 5,
-    nome: 'Realidade Virtual',
-    categoria: 'Tecnologia',
+    nome: '2ºA - Natureza Medicinal, Experimento com Abacate e Feijão e Arte com Componentes da Natureza',
+    categoria: 'Saúde e Bem-Estar',
     descricao:
-      'Experimente mundos virtuais imersivos, jogos educativos em VR e simulações científicas. Veja como a realidade virtual está mudando a educação e entretenimento.',
-    professor: 'Prof. Pedro Lima',
-    nivel: 'Básico'
+      'Natureza Medicinal, Experimento com Abacate e Feijão e Arte com Componentes da Natureza une ciência e criatividade ao mostrar o poder das plantas na saúde, o ciclo de vida vegetal e a beleza artística presente nos elementos naturais.',
+    professor: 'Profa. Josélia',
+    nivel: ''
   },
   {
     id: 6,
-    nome: 'Energia Renovável',
-    categoria: 'Sustentabilidade',
+    nome: '2º B - Terrário e Ilusão de Ótica',
+    categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Painéis solares, turbinas eólicas em miniatura e células de combustível. Aprenda sobre fontes de energia limpa e sustentável para o futuro do planeta.',
-    professor: 'Profa. Laura Mendes',
-    nivel: 'Intermediário'
+      'Terrário apresenta pequenos ecossistemas criados pelos alunos, demonstrando o equilíbrio da natureza e a importância da preservação ambiental. Ilusão de Ótica explora como o olhar humano pode ser enganado por formas e cores, unindo arte e ciência em experiências visuais surpreendentes.',
+    professor: 'Profa. Débora',
+    nivel: ''
   },
   {
     id: 7,
-    nome: 'Inteligência Artificial',
-    categoria: 'Tecnologia',
+    nome: '2º C - O Cultivo de Plantas e Seus Benefícios para a Saúde',
+    categoria: 'Saúde e Bem-Estar',
     descricao:
-      'Demonstrações de machine learning, reconhecimento de imagens e chatbots inteligentes. Veja como a IA está presente no nosso cotidiano e suas aplicações futuras.',
-    professor: 'Prof. Ricardo Alves',
-    nivel: 'Avançado'
+      'O Cultivo de Plantas e Seus Benefícios para a Saúde destaca a importância das plantas para o bem-estar físico e mental, incentivando hábitos sustentáveis e o contato com a natureza.',
+    professor: 'Profa. Monique',
+    nivel: ''
   },
   {
     id: 8,
-    nome: 'Física Quântica',
-    categoria: 'Ciências',
+    nome: '2º D - Germinação de Alpiste',
+    categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Experimentos com luz, ondas e partículas subatômicas. Explore os mistérios da física quântica através de demonstrações visuais e interativas.',
-    professor: 'Prof. Fernando Rocha',
-    nivel: 'Avançado'
+      'Germinação de Alpiste apresenta o processo de crescimento das plantas, promovendo a observação científica e a compreensão dos ciclos da natureza.',
+    professor: 'Profa. Adriana',
+    nivel: ''
   },
   {
     id: 9,
-    nome: 'Ecologia Urbana',
-    categoria: 'Sustentabilidade',
+    nome: '3º A - A Evolução dos Meios de Comunicação',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Jardins verticais, compostagem e sistemas de purificação de água. Aprenda como criar ambientes sustentáveis em áreas urbanas.',
-    professor: 'Profa. Camila Ferreira',
-    nivel: 'Básico'
+    'A Evolução dos Meios de Comunicação mostra como as formas de transmitir informações se transformaram ao longo do tempo, conectando o passado e o presente da tecnologia e da comunicação humana.',
+    professor: 'Profa. Denise',
+    nivel: ''
   },
   {
     id: 10,
-    nome: 'Programação e Games',
-    categoria: 'Tecnologia',
+    nome: '3º B - A Evolução dos Meios de Comunicação',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Criação de jogos, aplicativos móveis e websites. Veja como a programação pode ser divertida e criativa, com demonstrações de projetos estudantis.',
-    professor: 'Prof. Gabriel Torres',
-    nivel: 'Intermediário'
+      'A Evolução dos Meios de Comunicação mostra como as formas de transmitir informações se transformaram ao longo do tempo, conectando o passado e o presente da tecnologia e da comunicação humana.',
+    professor: 'Profa. Jussara',
+    nivel: ''
   },
   {
     id: 11,
-    nome: 'Medicina do Futuro',
-    categoria: 'Ciências',
+    nome: '3º C - Brinquedos Antigos e Brinquedos Tecnológicos',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Simuladores médicos, impressão 3D de órgãos e telemedicina. Descubra como a tecnologia está revolucionando os cuidados com a saúde.',
-    professor: 'Dra. Patricia Nunes',
-    nivel: 'Avançado'
+      'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
+    professor: 'Profa. Edyr',
+    nivel: ''
   },
   {
     id: 12,
-    nome: 'Arqueologia Digital',
-    categoria: 'História',
+    nome: '3º D - Brinquedos Antigos e Brinquedos Tecnológicos',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Reconstruções 3D de sítios arqueológicos, análise de artefatos e técnicas de datação. Veja como a tecnologia ajuda a desvendar o passado.',
-    professor: 'Prof. Marcos Dias',
-    nivel: 'Intermediário'
+      'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
+    professor: 'Profa. Shirley',
+    nivel: ''
   },
   {
     id: 13,
-    nome: 'Matemática Aplicada',
-    categoria: 'Matemática',
+    nome: '4º A - Engenhocas com Material Reciclável',
+    categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Fractais, geometria espacial e modelagem matemática. Descubra a beleza da matemática através de visualizações e aplicações práticas.',
-    professor: 'Profa. Juliana Campos',
-    nivel: 'Intermediário'
+      'Engenhocas com Material Reciclável estimula a criatividade e a sustentabilidade, mostrando invenções feitas pelas crianças e suas famílias a partir do reaproveitamento de materiais do cotidiano.',
+    professor: 'Professores Anderson e Solange',
+    nivel: ''
   },
   {
     id: 14,
-    nome: 'Nanotecnologia',
-    categoria: 'Tecnologia',
+    nome: '4º B - Brinquedos Folclóricos',
+    categoria: 'Cultura e Diversidade',
     descricao:
-      'Materiais inteligentes, nanopartículas e aplicações médicas. Explore o mundo invisível da nanotecnologia e suas aplicações revolucionárias.',
-    professor: 'Prof. André Barbosa',
-    nivel: 'Avançado'
+      'Brinquedos Folclóricos resgata as tradições e a cultura popular brasileira, valorizando brincadeiras que fazem parte da infância e da identidade do nosso povo.',
+    professor: 'Profa. Fabiana',
+    nivel: ''
   },
   {
     id: 15,
-    nome: 'Psicologia Cognitiva',
-    categoria: 'Ciências Humanas',
+    nome: '4º C - Libras e Experimentos Científicos',
+    categoria: 'Acessibilidade, Comunicação e Inovação',
     descricao:
-      'Experimentos sobre percepção, memória e tomada de decisões. Entenda como funciona a mente humana através de testes interativos.',
-    professor: 'Profa. Beatriz Lopes',
-    nivel: 'Básico'
+      'Libras promove a inclusão e o respeito à diversidade, apresentando a língua brasileira de sinais como forma de comunicação e expressão cultural.Já a mostra de Experimentos Científico desperta a curiosidade e o pensamento investigativo das crianças por meio de descobertas práticas e divertidas.',
+    professor: 'Profa. Solange',
+    nivel: ''
   },
   {
     id: 16,
-    nome: 'Engenharia Aeroespacial',
-    categoria: 'Engenharia',
+    nome: '4º D - Experimentos Científicos Reversíveis e Irreversíveis',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Foguetes em miniatura, simuladores de voo e modelos de satélites. Explore os desafios da exploração espacial e aviação.',
-    professor: 'Prof. Rodrigo Martins',
-    nivel: 'Avançado'
+      'Experimentos Científicos Reversíveis e Irreversíveis demonstra, de forma prática e divertida, as transformações da matéria, destacando quais processos podem ou não ser revertidos.',
+    professor: 'Profa. Lucia Helena',
+    nivel: ''
   },
   {
     id: 17,
-    nome: 'Arte e Tecnologia',
-    categoria: 'Arte',
+    nome: '5º A - Podcast Marie Curie',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Arte digital, hologramas e instalações interativas. Veja como a tecnologia está transformando a expressão artística contemporânea.',
-    professor: 'Profa. Sofia Reis',
-    nivel: 'Básico'
+      'A exposição apresenta a vida e as descobertas de Marie Curie, pioneira na pesquisa sobre radioatividade e inspiração para gerações de cientistas, por meio de Podcast.',
+    professor: 'Profa. Norma',
+    nivel: ''
   },
   {
     id: 18,
-    nome: 'Genética e Evolução',
-    categoria: 'Ciências',
+    nome: '5º B - Podcast Marie Curie',
+    categoria: 'Ciência, Tecnologia e Inovação',
     descricao:
-      'Modelos de DNA, árvores evolutivas e experimentos com plantas. Compreenda os mecanismos da hereditariedade e evolução das espécies.',
-    professor: 'Prof. Lucas Cardoso',
-    nivel: 'Intermediário'
+      'A exposição apresenta a vida e as descobertas de Marie Curie, pioneira na pesquisa sobre radioatividade e inspiração para gerações de cientistas, por meio de Podcast.',
+    professor: 'Prof. Ana Priscila',
+    nivel: ''
   },
   {
     id: 19,
-    nome: 'Cidades Inteligentes',
-    categoria: 'Urbanismo',
+    nome: '5º C - Sistema Digestório, Experiências Científicas',
+    categoria: 'Corpo Humano, Tecnologia e Inovação',
     descricao:
-      'Sensores IoT, sistemas de trânsito inteligente e gestão urbana. Veja como a tecnologia pode tornar as cidades mais eficientes e sustentáveis.',
-    professor: 'Profa. Helena Souza',
-    nivel: 'Intermediário'
+      'Uma viagem pelo corpo humano com o Sistema Digestório, curiosas Experiências Científicas e a arte do Cordel unindo ciência e cultura popular.',
+    professor: 'Profa. Cíntia',
+    nivel: ''
   },
   {
     id: 20,
-    nome: 'Oceanografia',
-    categoria: 'Ciências',
+    nome: '5º D - Sistema Respiratório, Eletricidade Estática',
+    categoria: 'Corpo Humano, Tenologia e Inovação',
     descricao:
-      'Aquários marinhos, simuladores de correntes oceânicas e vida marinha. Explore os mistérios dos oceanos e sua importância para o planeta.',
-    professor: 'Prof. Diego Pereira',
-    nivel: 'Básico'
+      'Explorando o ar que nos dá vida e a energia invisível das cargas: Sistema Respiratório e Eletricidade Estática em ação!',
+    professor: 'Profa. Vanessa',
+    nivel: ''
   },
   {
     id: 21,
-    nome: 'Neurociência',
-    categoria: 'Ciências',
+    nome: 'Inglês',
+    categoria: 'Língua Estrangeira',
     descricao:
-      'Modelos do cérebro, eletroencefalografia e experimentos sobre cognição. Descubra como funciona o órgão mais complexo do corpo humano.',
-    professor: 'Dra. Carla Moreira',
-    nivel: 'Avançado'
+      'Descobrindo novos mundos através das palavras: a importância da Língua Inglesa na comunicação e na cultura global.',
+    professor: 'profa. Ane Chelly, prof. Flávio,  profa. Luciana, profa. Nuncciella',
+    nivel: ''
   },
   {
     id: 22,
-    nome: 'Agricultura 4.0',
-    categoria: 'Sustentabilidade',
+    nome: 'Arte',
+    categoria: 'Expressões Artísticas',
     descricao:
-      'Hidroponia, sensores de solo e drones agrícolas. Veja como a tecnologia está revolucionando a produção de alimentos de forma sustentável.',
-    professor: 'Prof. Thiago Ramos',
-    nivel: 'Intermediário'
+      'A Arte como expressão da criatividade humana, revelando emoções, ideias e diferentes formas de ver o mundo.',
+    professor: ' Prof Emerson, profa Jéssica, profa Melissa, profa Rosana',
+    nivel: ''
   },
   {
     id: 23,
-    nome: 'Criptografia e Segurança',
-    categoria: 'Tecnologia',
+    nome: 'Jardins I e II - Corredor Sonoro, Alimentação Saúdável e Elementos da Natureza',
+    categoria: 'Educação Infantil',
     descricao:
-      'Códigos secretos, blockchain e proteção de dados. Aprenda sobre segurança digital e como proteger informações no mundo conectado.',
-    professor: 'Prof. Vinicius Castro',
-    nivel: 'Avançado'
+      'Um convite para ouvir, sentir e aprender: sons da vida no Corredor Sonoro, cores da Alimentação Saudável e a harmonia dos Elementos da Natureza.',
+    professor: 'Profa Ana Paula, profa Andréia,  profa Michele e profa Nathália',
+    nivel: ''
   },
   {
     id: 24,
-    nome: 'Mudanças Climáticas',
-    categoria: 'Sustentabilidade',
+    nome: 'Educação Integral - Convivência e Afeto',
+    categoria: 'Africanidades',
     descricao:
-      'Simuladores climáticos, análise de dados ambientais e soluções sustentáveis. Compreenda os desafios climáticos e as possíveis soluções.',
-    professor: 'Profa. Renata Silva',
-    nivel: 'Intermediário'
+      'Celebrando as Africanidades: raízes, cultura e saberes que enriquecem nossa história e identidade.',
+    professor: 'Profa. Cristiana',
+    nivel: ''
+  },
+  {
+    id: 25,
+    nome: 'Atendimento Educacional Especializado - AEE',
+    categoria: 'Acessibilidade, Comunicação e Inovação',
+    descricao:
+      'A Sala Sensorial do Atendimento Educacional Especializado oferece experiências que estimulam os sentidos, favorecem a aprendizagem e promovem a inclusão de todas as crianças.',
+    professor: 'Profa. Andréia e profa Patrícia',
+    nivel: ''
   }
 ]
 
@@ -709,7 +718,7 @@ export default function FeiraCienciaTecnologia() {
             {/* Conteúdo */}
             <div className="p-6">
               <div className="mb-8">
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">Sobre esta sala</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">Sobre esta exposição</h2>
                 <p className="text-gray-700 leading-relaxed">{sala.descricao}</p>
               </div>
 
@@ -825,7 +834,7 @@ export default function FeiraCienciaTecnologia() {
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Feira de Ciência e Tecnologia</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">Mostra Educacional de Ciência, Tecnologia e Inovação</h1>
               <p className="text-gray-600">
                 Explore {SALAS_DATA.length} salas incríveis • {visitedRooms.length} visitadas • {comments.length} comentários
               </p>
