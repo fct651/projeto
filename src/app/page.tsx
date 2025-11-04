@@ -225,7 +225,7 @@ const SALAS_DATA: Sala[] = [
   {
     id: 20,
     nome: '5º D - Sistema Respiratório, Eletricidade Estática',
-    categoria: 'Corpo Humano, Tenologia e Inovação',
+    categoria: 'Corpo Humano, Tecnologia e Inovação',
     descricao:
       'Explorando o ar que nos dá vida e a energia invisível das cargas: Sistema Respiratório e Eletricidade Estática em ação!',
     professor: 'Profa. Vanessa',
