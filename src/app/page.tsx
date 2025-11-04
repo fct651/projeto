@@ -58,7 +58,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Africanidades e Oficina de Argila celebra a cultura e herança africana por meio de produções artísticas feitas pelas crianças, valorizando a identidade, a ancestralidade e a expressão criativa.',
     professor: 'Profa. Vera',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
     professor: 'Profa. Shirley',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Brinquedos e Jogos Recicláveis estimula a criatividade e a consciência ambiental das crianças, mostrando como materiais reaproveitados podem se transformar em divertidas formas de brincar e aprender.',
     professor: 'Profa. Luciana',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'As Contribuições Africanas para Nossa Cultura reconhece e valoriza a influência africana na formação da identidade brasileira, presente na música, na culinária, na linguagem e em diversas expressões culturais.',
     professor: 'Profa. Sheila',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Natureza Medicinal, Experimento com Abacate e Feijão e Arte com Componentes da Natureza une ciência e criatividade ao mostrar o poder das plantas na saúde, o ciclo de vida vegetal e a beleza artística presente nos elementos naturais.',
     professor: 'Profa. Josélia',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 6,
@@ -103,7 +103,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Terrário apresenta pequenos ecossistemas criados pelos alunos, demonstrando o equilíbrio da natureza e a importância da preservação ambiental. Ilusão de Ótica explora como o olhar humano pode ser enganado por formas e cores, unindo arte e ciência em experiências visuais surpreendentes.',
     professor: 'Profa. Débora',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 7,
@@ -112,7 +112,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'O Cultivo de Plantas e Seus Benefícios para a Saúde destaca a importância das plantas para o bem-estar físico e mental, incentivando hábitos sustentáveis e o contato com a natureza.',
     professor: 'Profa. Monique',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 8,
@@ -121,7 +121,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Germinação de Alpiste apresenta o processo de crescimento das plantas, promovendo a observação científica e a compreensão dos ciclos da natureza.',
     professor: 'Profa. Adriana',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 9,
@@ -130,7 +130,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
     'A Evolução dos Meios de Comunicação mostra como as formas de transmitir informações se transformaram ao longo do tempo, conectando o passado e o presente da tecnologia e da comunicação humana.',
     professor: 'Profa. Denise',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 10,
@@ -139,7 +139,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'A Evolução dos Meios de Comunicação mostra como as formas de transmitir informações se transformaram ao longo do tempo, conectando o passado e o presente da tecnologia e da comunicação humana.',
     professor: 'Profa. Jussara',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 11,
@@ -148,7 +148,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
     professor: 'Profa. Edyr',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 12,
@@ -157,7 +157,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Brinquedos Antigos e Brinquedos Tecnológicos apresenta a evolução das formas de brincar ao longo do tempo, destacando as transformações culturais e tecnológicas nas infâncias de diferentes gerações.',
     professor: 'Profa. Shirley',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 13,
@@ -166,7 +166,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Engenhocas com Material Reciclável estimula a criatividade e a sustentabilidade, mostrando invenções feitas pelas crianças e suas famílias a partir do reaproveitamento de materiais do cotidiano.',
     professor: 'Professores Anderson e Solange',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 14,
@@ -175,7 +175,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Brinquedos Folclóricos resgata as tradições e a cultura popular brasileira, valorizando brincadeiras que fazem parte da infância e da identidade do nosso povo.',
     professor: 'Profa. Fabiana',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 15,
@@ -184,7 +184,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Libras promove a inclusão e o respeito à diversidade, apresentando a língua brasileira de sinais como forma de comunicação e expressão cultural.Já a mostra de Experimentos Científico desperta a curiosidade e o pensamento investigativo das crianças por meio de descobertas práticas e divertidas.',
     professor: 'Profa. Solange',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 16,
@@ -193,7 +193,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Experimentos Científicos Reversíveis e Irreversíveis demonstra, de forma prática e divertida, as transformações da matéria, destacando quais processos podem ou não ser revertidos.',
     professor: 'Profa. Lucia Helena',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 17,
@@ -202,7 +202,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'A exposição apresenta a vida e as descobertas de Marie Curie, pioneira na pesquisa sobre radioatividade e inspiração para gerações de cientistas, por meio de Podcast.',
     professor: 'Profa. Norma',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 18,
@@ -211,7 +211,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'A exposição apresenta a vida e as descobertas de Marie Curie, pioneira na pesquisa sobre radioatividade e inspiração para gerações de cientistas, por meio de Podcast.',
     professor: 'Prof. Ana Priscila',
-    nivel: ''
+    nivel: 'manhã'
   },
   {
     id: 19,
@@ -220,7 +220,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Uma viagem pelo corpo humano com o Sistema Digestório, curiosas Experiências Científicas e a arte do Cordel unindo ciência e cultura popular.',
     professor: 'Profa. Cíntia',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 20,
@@ -229,7 +229,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Explorando o ar que nos dá vida e a energia invisível das cargas: Sistema Respiratório e Eletricidade Estática em ação!',
     professor: 'Profa. Vanessa',
-    nivel: ''
+    nivel: 'tarde'
   },
   {
     id: 21,
@@ -238,7 +238,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Descobrindo novos mundos através das palavras: a importância da Língua Inglesa na comunicação e na cultura global.',
     professor: 'profa. Ane Chelly, prof. Flávio,  profa. Luciana, profa. Nuncciella',
-    nivel: ''
+    nivel: 'manhã e tarde'
   },
   {
     id: 22,
@@ -247,7 +247,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'A Arte como expressão da criatividade humana, revelando emoções, ideias e diferentes formas de ver o mundo.',
     professor: ' Prof Emerson, profa Jéssica, profa Melissa, profa Rosana',
-    nivel: ''
+    nivel: 'manhã e tarde'
   },
   {
     id: 23,
@@ -256,7 +256,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Um convite para ouvir, sentir e aprender: sons da vida no Corredor Sonoro, cores da Alimentação Saudável e a harmonia dos Elementos da Natureza.',
     professor: 'Profa Ana Paula, profa Andréia,  profa Michele e profa Nathália',
-    nivel: ''
+    nivel: 'manhã e tarde'
   },
   {
     id: 24,
@@ -265,7 +265,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Celebrando as Africanidades: raízes, cultura e saberes que enriquecem nossa história e identidade.',
     professor: 'Profa. Cristiana',
-    nivel: ''
+    nivel: 'manhã e tarde'
   },
   {
     id: 25,
@@ -274,7 +274,7 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'A Sala Sensorial do Atendimento Educacional Especializado oferece experiências que estimulam os sentidos, favorecem a aprendizagem e promovem a inclusão de todas as crianças.',
     professor: 'Profa. Andréia e profa Patrícia',
-    nivel: ''
+    nivel: 'manhã'
   }
 ]
 
