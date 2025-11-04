@@ -834,7 +834,7 @@ export default function FeiraCienciaTecnologia() {
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Mostra Educacional de Ciência, Tecnologia e Inovação</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">Mostra Educacional da Emef Profª Maria Célia Cabral Amaral 2025</h1>
               <p className="text-gray-600">
                 Explore {SALAS_DATA.length} salas incríveis • {visitedRooms.length} visitadas • {comments.length} comentários
               </p>
