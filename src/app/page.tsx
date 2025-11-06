@@ -260,7 +260,7 @@ const SALAS_DATA: Sala[] = [
   },
   {
     id: 24,
-    nome: 'Educação Integral - Convivência e Afeto',
+    nome: 'Integral - Convivência e Afeto - Africanidades',
     categoria: 'Pílula ERER - Educação para as Relações Etnico-raciais',
     descricao:
       'Celebrando as Africanidades: raízes, cultura e saberes que enriquecem nossa história e identidade.',
@@ -269,7 +269,7 @@ const SALAS_DATA: Sala[] = [
   },
   {
     id: 25,
-    nome: 'Atendimento Educacional Especializado - AEE',
+    nome: 'Atendimento Educacional Especializado - AEE - Sala Sensorial',
     categoria: 'Acessibilidade, Comunicação e Inovação',
     descricao:
       'A Sala Sensorial do Atendimento Educacional Especializado oferece experiências que estimulam os sentidos, favorecem a aprendizagem e promovem a inclusão de todas as crianças.',
@@ -283,6 +283,15 @@ const SALAS_DATA: Sala[] = [
     descricao:
       'Na Robótica Educacional, a imaginação ganha vida: cada peça, um passo rumo ao futuro!',
     professor: 'Profa. Maria',
+    nivel: 'manhã e tarde'
+  },
+  {
+    id: 27,
+    nome: 'Engenhocas Recicláveis das Crianças e das Famílias',
+    categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
+    descricao:
+      'Engenhocas com Material Reciclável estimula a criatividade e a sustentabilidade, mostrando invenções feitas pelas crianças e suas famílias a partir do reaproveitamento de materiais do cotidiano.',
+    professor: 'Todos professores',
     nivel: 'manhã e tarde'
   }
 ]
