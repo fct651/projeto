@@ -116,10 +116,10 @@ const SALAS_DATA: Sala[] = [
   },
   {
     id: 8,
-    nome: '2º D - Germinação de Alpiste',
+    nome: '2º D - Germinação da Pipoca',
     categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Germinação de Alpiste apresenta o processo de crescimento das plantas, promovendo a observação científica e a compreensão dos ciclos da natureza.',
+      'Germinação da pipoca apresenta o processo de crescimento das plantas, promovendo a observação científica e a compreensão dos ciclos da natureza.',
     professor: 'Profa. Adriana',
     nivel: 'tarde'
   },
