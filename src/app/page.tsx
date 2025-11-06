@@ -54,7 +54,7 @@ const SALAS_DATA: Sala[] = [
   {
     id: 1,
     nome: '1º A - Africanidades e Oficina de Argila',
-    categoria: 'Africanidades',
+    categoria: 'Pílula ERER - Educação para as Relações Etnico-raciais',
     descricao:
       'Africanidades e Oficina de Argila celebra a cultura e herança africana por meio de produções artísticas feitas pelas crianças, valorizando a identidade, a ancestralidade e a expressão criativa.',
     professor: 'Profa. Vera',
@@ -81,7 +81,7 @@ const SALAS_DATA: Sala[] = [
   {
     id: 4,
     nome: '1º D - As Contribuições Africanas para Nossa Cultura',
-    categoria: 'Africanidades',
+    categoria: 'Pílula ERER - Educação para as Relações Etnico-raciais',
     descricao:
       'As Contribuições Africanas para Nossa Cultura reconhece e valoriza a influência africana na formação da identidade brasileira, presente na música, na culinária, na linguagem e em diversas expressões culturais.',
     professor: 'Profa. Sheila',
@@ -101,7 +101,7 @@ const SALAS_DATA: Sala[] = [
     nome: '2º B - Terrário e Ilusão de Ótica',
     categoria: 'Inovação, Sustentabilidade e Meio Ambiente',
     descricao:
-      'Terrário apresenta pequenos ecossistemas criados pelos alunos, demonstrando o equilíbrio da natureza e a importância da preservação ambiental. Ilusão de Ótica explora como o olhar humano pode ser enganado por formas e cores, unindo arte e ciência em experiências visuais surpreendentes.',
+      'Terrário apresenta pequenos ecossistemas, demonstrando o equilíbrio da natureza e a importância da preservação ambiental. Ilusão de Ótica explora o olhar humano pelas formas e cores, unindo arte e ciência em experiências visuais surpreendentes.',
     professor: 'Profa. Débora',
     nivel: 'manhã'
   },
@@ -261,7 +261,7 @@ const SALAS_DATA: Sala[] = [
   {
     id: 24,
     nome: 'Educação Integral - Convivência e Afeto',
-    categoria: 'Africanidades',
+    categoria: 'Pílula ERER - Educação para as Relações Etnico-raciais',
     descricao:
       'Celebrando as Africanidades: raízes, cultura e saberes que enriquecem nossa história e identidade.',
     professor: 'Profa. Cristiana',
@@ -275,6 +275,15 @@ const SALAS_DATA: Sala[] = [
       'A Sala Sensorial do Atendimento Educacional Especializado oferece experiências que estimulam os sentidos, favorecem a aprendizagem e promovem a inclusão de todas as crianças.',
     professor: 'Profa. Andréia e profa Patrícia',
     nivel: 'manhã'
+  },
+  {
+    id: 26,
+    nome: 'Robótica Educacional',
+    categoria: 'Ciência, Tecnologia e Inovação',
+    descricao:
+      'Na Robótica Educacional, a imaginação ganha vida: cada peça, um passo rumo ao futuro!',
+    professor: 'Profa. Maria',
+    nivel: 'manhã e tarde'
   }
 ]
 
@@ -371,8 +380,8 @@ export default function FeiraCienciaTecnologia() {
     const visitedData = visitedRooms.map((room) => {
       const sala = SALAS_DATA.find((s) => s.id === room.salaId)
       return {
-        'ID da Sala': room.salaId,
-        'Nome da Sala': sala?.nome || 'Desconhecida',
+        'ID da Exposição': room.salaId,
+        'Nome da Exposição': sala?.nome || 'Desconhecida',
         Categoria: sala?.categoria || 'N/A',
         Professor: sala?.professor || 'N/A',
         'Data da Visita': new Date(room.timestamp).toLocaleString('pt-BR')
@@ -383,8 +392,8 @@ export default function FeiraCienciaTecnologia() {
       const sala = SALAS_DATA.find((s) => s.id === comment.sala_id)
       return {
         'ID do Comentário': comment.id,
-        'ID da Sala': comment.sala_id,
-        'Nome da Sala': sala?.nome || 'Desconhecida',
+        'ID da Exposição': comment.sala_id,
+        'Nome da Exposição': sala?.nome || 'Desconhecida',
         Autor: comment.autor,
         Comentário: comment.texto,
         Avaliação: comment.rating,
@@ -393,8 +402,8 @@ export default function FeiraCienciaTecnologia() {
     })
 
     const statsData = [
-      { Métrica: 'Total de Salas', Valor: SALAS_DATA.length },
-      { Métrica: 'Salas Visitadas', Valor: visitedRooms.length },
+      { Métrica: 'Total de Exposições', Valor: SALAS_DATA.length },
+      { Métrica: 'Exposições Visitadas', Valor: visitedRooms.length },
       { Métrica: 'Total de Comentários', Valor: comments.length },
       {
         Métrica: 'Avaliação Média',
@@ -410,7 +419,7 @@ export default function FeiraCienciaTecnologia() {
     const wsComments = XLSX.utils.json_to_sheet(commentsData)
     const wsStats = XLSX.utils.json_to_sheet(statsData)
 
-    XLSX.utils.book_append_sheet(wb, wsVisited, 'Salas Visitadas')
+    XLSX.utils.book_append_sheet(wb, wsVisited, 'Exposições Visitadas')
     XLSX.utils.book_append_sheet(wb, wsComments, 'Comentários')
     XLSX.utils.book_append_sheet(wb, wsStats, 'Estatísticas')
 
@@ -555,7 +564,7 @@ export default function FeiraCienciaTecnologia() {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-gray-600 text-sm">Total de Salas</p>
+                  <p className="text-gray-600 text-sm">Total de Exposições</p>
                   <p className="text-3xl font-bold text-gray-900">{SALAS_DATA.length}</p>
                 </div>
                 <MapPin className="w-8 h-8 text-blue-600" />
@@ -565,7 +574,7 @@ export default function FeiraCienciaTecnologia() {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-gray-600 text-sm">Salas Visitadas</p>
+                  <p className="text-gray-600 text-sm">Exposições Visitadas</p>
                   <p className="text-3xl font-bold text-gray-900">{visitedRooms.length}</p>
                 </div>
                 <CheckCircle className="w-8 h-8 text-green-600" />
@@ -692,7 +701,7 @@ export default function FeiraCienciaTecnologia() {
                 </button>
                 <div className="flex items-center gap-2">
                   {isVisited && <CheckCircle className="w-6 h-6 text-green-300" />}
-                  <span className="text-sm">Sala {sala.id}</span>
+                  <span className="text-sm">Exposição {sala.id}</span>
                 </div>
               </div>
 
@@ -717,6 +726,19 @@ export default function FeiraCienciaTecnologia() {
 
             {/* Conteúdo */}
             <div className="p-6">
+              {/*IMAGEM GRANDE DA EXPOSIÇÃO*/}
+              <div className="mb-6 rounded-lg overflow-hidden bg-gray-100 h-64">
+                  <img
+                    src={`/exposicoes/${sala.id}.jpg`}
+                    alt={`Exposição ${sala.id} - ${sala.nome}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    onError={(e)=>{
+                      // Se não encontrar a imagem, esconde o <img> e mantém um topo cinza
+                      (e.currentTarget as HTMLImageElement).style.display = 'none'
+                    }}
+                    />
+                    </div>
               <div className="mb-8">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">Sobre esta exposição</h2>
                 <p className="text-gray-700 leading-relaxed">{sala.descricao}</p>
@@ -769,7 +791,7 @@ export default function FeiraCienciaTecnologia() {
                     <textarea
                       value={newComment}
                       onChange={(e) => setNewComment(e.target.value)}
-                      placeholder="Escreva seu comentário sobre esta sala..."
+                      placeholder="Escreva seu comentário sobre esta Exposição..."
                       rows={4}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
                     />
@@ -790,7 +812,7 @@ export default function FeiraCienciaTecnologia() {
                   {salaComments.length === 0 ? (
                     <div className="text-center py-8">
                       <MessageSquare className="w-12 h-12 text-gray-300 mx-auto mb-3" />
-                      <p className="text-gray-500">Seja o primeiro a comentar sobre esta sala!</p>
+                      <p className="text-gray-500">Seja o primeiro a comentar sobre esta exposição!</p>
                     </div>
                   ) : (
                     salaComments.map((comment) => (
@@ -836,7 +858,7 @@ export default function FeiraCienciaTecnologia() {
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Mostra Educacional da Emef Profª Maria Célia Cabral Amaral 2025</h1>
               <p className="text-gray-600">
-                Explore {SALAS_DATA.length} salas incríveis • {visitedRooms.length} visitadas • {comments.length} comentários
+                Explore {SALAS_DATA.length} exposições incríveis • {visitedRooms.length} visitadas • {comments.length} comentários
               </p>
             </div>
             <button
@@ -886,11 +908,24 @@ export default function FeiraCienciaTecnologia() {
                   setCurrentView('sala')
                 }}
               >
+                {/*IMAGEM DA EXPOSIÇÃO*/}
+                <div className="relative w-full h-40 overflow-hidden rounded-t-x1 bg-gray-100">
+                  <img
+                    src={`/exposicoes/${sala.id}.jpg`}
+                    alt={`Exposição ${sala.id} - ${sala.nome}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    onError={(e)=>{
+                      // Se não encontrar a imagem, esconde o <img> e mantém um topo cinza
+                      (e.currentTarget as HTMLImageElement).style.display = 'none'
+                    }}
+                    />
+                    </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-2">
                       <span className="bg-indigo-100 text-indigo-800 text-sm font-medium px-2 py-1 rounded-full">
-                        Sala {sala.id}
+                        Exposição {sala.id}
                       </span>
                       {isVisited && <CheckCircle className="w-5 h-5 text-green-600" />}
                     </div>
@@ -934,7 +969,7 @@ export default function FeiraCienciaTecnologia() {
         {filteredSalas.length === 0 && (
           <div className="text-center py-12">
             <MapPin className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-            <p className="text-gray-500 text-lg">Nenhuma sala encontrada nesta categoria</p>
+            <p className="text-gray-500 text-lg">Nenhuma exposição encontrada nesta categoria</p>
           </div>
         )}
       </div>
