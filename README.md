@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# Feira de Ciência - Aplicação Web
+
+Aplicação web para gerenciamento de visitas e comentários em uma feira escolar, com integração backend (Supabase) e exportação de dados.
+
+## 🚀 Funcionalidades
+- Registro de visitas
+- Sistema de comentários e avaliações
+- Painel administrativo
+- Exportação para Excel
+
+## 🛠 Tecnologias
+- React / Next.js
+- Supabase
+- XLSX
+
 ## Getting Started
 
 First, run the development server:
